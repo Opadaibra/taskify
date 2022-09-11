@@ -1,0 +1,119 @@
+.input {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+}
+
+.inputbox {
+    width: 100%;
+    height: 40%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+    transition: box-shadow 0.5;
+}
+
+.inputbox:focus {
+    box-shadow: 0px 0px 10px 1000px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+.input_btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    right: 0;
+    box-shadow: 0 0 10px black;
+    border-radius: 50%;
+    outline: none;
+    background-color: #2f74c0;
+    color: white;
+    border: none;
+    transition: 0.2s all;
+}
+
+.input_btn:hover {
+    background-color: #388ae2;
+}
+
+.input_btn:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.todosheading {
+    font-size: 90;
+    color: white;
+}
+
+.todos {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(50, 195, 205);
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    padding: 15px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.todo_single {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
+    transition: 0.2s;
+}
+
+.todo_single:hover {
+    box-shadow: 0 0 5px black;
+    transform: scale(1.03);
+}
+
+.todo_single_text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+.remove{
+    background-color: rgb(235, 103, 80);
+  }
+@media(max-width:1100px) {
+    .todos {
+        width: 45%;
+    }
+}
+
+@media(max-width:700px) {
+    .input {
+        width: 95%;
+    }
+
+    .todos {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+/* 
+    .todo_single {
+        width: 100%;
+    } */
+
+    .container {
+        width: 80%;
+        flex-direction: column;
+    }
+}
